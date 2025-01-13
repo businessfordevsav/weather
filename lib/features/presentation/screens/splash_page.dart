@@ -29,32 +29,35 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      width: 375,
-      height: 812,
-      decoration: const BoxDecoration(
-        color: Color.fromRGBO(0, 0, 0, 1),
-      ),
-      child: Stack(
-        children: <Widget>[
-          Positioned(
-              top: 771,
-              left: 145,
-              child: Text(
-                'A minimal weather app',
-                textAlign: TextAlign.left,
-                style: Theme.of(context).textTheme.titleMedium,
-              )),
-          Positioned(
-              top: 392,
-              left: 149,
+      body: Container(
+        color: Theme.of(context).colorScheme.surface,
+        child: Stack(
+          children: <Widget>[
+            Align(
+              alignment: Alignment.center,
               child: Text(
                 'Weather',
-                textAlign: TextAlign.left,
                 style: Theme.of(context).textTheme.labelLarge,
-              )),
-        ],
+              ),
+            ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'A minimal weather app',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }

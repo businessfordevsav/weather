@@ -304,10 +304,10 @@ extension on logging.Level {
 extension on LoggerLevel {
   /// Transforms [LoggerLevel] to emoji
   String get emoji => switch (this) {
-        LoggerLevel.error => '🔥',
-        LoggerLevel.warning => '⚠️',
-        LoggerLevel.info => '💡',
-        LoggerLevel.debug => '🐛',
-        LoggerLevel.verbose => '🔬',
+        LoggerLevel.error => '\u{1F525}',
+        LoggerLevel.warning => '\u{26A0}',
+        LoggerLevel.info => '\u{1F4A1}',
+        LoggerLevel.debug => '\u{1F41B}',
+        LoggerLevel.verbose => '\u{2753}',
       };
 }
