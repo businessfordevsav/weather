@@ -3,7 +3,7 @@ name: Flutter CI/CD
 on:
   push:
     tags:
-      - 'v*' # Trigger the workflow when a tag like v1.0.0 is pushed
+      - 'v*' # Trigger on tags like v1.0.0
 
 jobs:
   build:
@@ -15,11 +15,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Set up Flutter environment
+      # Step 2: Set up Flutter
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable' # Use the stable version of Flutter
+          flutter-version: '3.10.0' # Specify an explicit Flutter version
 
       # Step 3: Install dependencies
       - name: Install dependencies
