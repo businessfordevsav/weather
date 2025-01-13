@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:weather/core/utils/routes.dart';
 
 class CustomAppBar extends StatelessWidget {
   final VoidCallback onPressed;
@@ -10,12 +12,12 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     // logger.info("subLocality :: $subLocality");
     return Padding(
-      padding: const EdgeInsets.all(30.0),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
       child: Row(
         mainAxisAlignment:
             MainAxisAlignment.spaceBetween, // Align left and right
         children: [
-          // Left-aligned widget
+          // Left-aligned widg et
           GestureDetector(
             onTap: onPressed,
             child: Column(
@@ -43,7 +45,9 @@ class CustomAppBar extends StatelessWidget {
                   size: 21,
                   color: Theme.of(context).colorScheme.secondary,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamed(AppRoutes.CITY_SELECTION_ROUTE_NAME);
+                },
               ),
               IconButton(
                 icon: Icon(
@@ -51,7 +55,9 @@ class CustomAppBar extends StatelessWidget {
                   size: 21,
                   color: Theme.of(context).colorScheme.secondary,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamed(AppRoutes.SETTINGS_ROUTE_NAME);
+                },
               ),
             ],
           ),
