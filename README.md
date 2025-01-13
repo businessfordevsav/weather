@@ -73,21 +73,21 @@ A feature-rich weather app built with Flutter, providing real-time weather updat
 
 ```bash
   git clone https://github.com/businessfordevsav/weather.git
-  cd weather-app
 ```
 
 2. **Navigate to the project directory**:
 
 ```bash
 cd weather-app
-Install the dependencies:
 ```
+
+3. **Install the dependencies**:
 
 ```bash
 flutter pub get
-Run the app:
 ```
 
+4, **Run the app**:
 ```bash
 flutter run
 ```
