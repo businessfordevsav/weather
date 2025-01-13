@@ -113,13 +113,13 @@ This app uses the [Open-Meteo API](https://open-meteo.com/) to fetch real-time w
 ![Search Location](screenshort/light/search_location.png)
 
 **Dark Theme**
-![Splash](screenshort/light/splash.png)
-![Home](screenshort/light/home.png)
-![Details](screenshort/light/details.png)
-![Forecast](screenshort/light/forecast.png)
-![Location](screenshort/light/location.png)
-![Setting](screenshort/light/setting.png)
-![Search Location](screenshort/light/search_location.png)
+![Splash](screenshort/dark/splash.png)
+![Home](screenshort/dark/home.png)
+![Details](screenshort/dark/details.png)
+![Forecast](screenshort/dark/forecast.png)
+![Location](screenshort/dark/location.png)
+![Setting](screenshort/dark/setting.png)
+![Search Location](screenshort/dark/search_location.png)
 
 ---
 
