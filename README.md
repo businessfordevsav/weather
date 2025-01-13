@@ -88,6 +88,7 @@ flutter pub get
 ```
 
 4. **Run the app**:
+
 ```bash
 flutter run
 ```
@@ -102,7 +103,23 @@ This app uses the [Open-Meteo API](https://open-meteo.com/) to fetch real-time w
 
 ## Screenshots
 
-_Include screenshots or GIFs showcasing the app's features._
+**Light Theme**
+![Splash](screenshort/light/splash.png)
+![Home](screenshort/light/home.png)
+![Details](screenshort/light/details.png)
+![Forecast](screenshort/light/forecast.png)
+![Location](screenshort/light/location.png)
+![Setting](screenshort/light/setting.png)
+![Search Location](screenshort/light/search_location.png)
+
+**Dark Theme**
+![Splash](screenshort/light/splash.png)
+![Home](screenshort/light/home.png)
+![Details](screenshort/light/details.png)
+![Forecast](screenshort/light/forecast.png)
+![Location](screenshort/light/location.png)
+![Setting](screenshort/light/setting.png)
+![Search Location](screenshort/light/search_location.png)
 
 ---
 
