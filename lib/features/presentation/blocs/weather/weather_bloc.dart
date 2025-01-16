@@ -36,7 +36,7 @@ class WeatherBloc extends Bloc<WeatherEvent, GetWeatherState> {
       GetWeatherDataEvent event, Emitter<GetWeatherState> emit) async {
     if (await Permission.location.isDenied) {
       // Request permission
-      PermissionStatus status = await Permission.location.request();
+      PermissionStatus status = await Permission.locationWhenInUse.request();
 
       if (status.isGranted) {
         await getCurrentWeather(event, emit); // Ensure this is awaited
